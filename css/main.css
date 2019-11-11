@@ -10,21 +10,25 @@ html {
 }
 
 .img-flex {
-  position: absolute;
-  width: 45em;
   display: block;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%);
 }
 
 
 .banner {
-  position: relative;
+  display: flex;
+  position: absolute;
 }
 
 body {
   overflow: hidden;
   margin: 0;
-  align-items: center;
   max-height: 500px;
+  justify-content: center;
+  align-items: center;
 }
 
 h2 {
