@@ -15,8 +15,13 @@ html {
   left: 50%;
   top: 50%;
   transform: translateX(-50%);
+  width: 100%;
 }
 
+.image {
+  display: flex;
+  position: absolute;
+}
 
 .banner {
   display: flex;
@@ -60,5 +65,5 @@ p {
 }
 
 .btn:hover {
-    background-color: #000;
-  }
+  background-color: #000;
+}
