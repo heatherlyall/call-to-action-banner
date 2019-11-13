@@ -9,8 +9,10 @@ html {
   box-sizing: inherit;
 }
 
-header {
-
+.content {
+display: inline-block;
+max-width: 45em;
+padding: 1rem;
 }
 .banner {
   display: flex;
@@ -35,7 +37,7 @@ header {
 .text {
   max-width: 45em;
   position: absolute;
-  display: flex;
+  display: inline-block;
   text-align: left;
 }
 
