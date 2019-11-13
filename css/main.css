@@ -9,9 +9,18 @@ html {
   box-sizing: inherit;
 }
 
+header {
+
+}
+.banner {
+  display: flex;
+  position: relative;
+  max-height: 500px;
+}
+
 .img-flex {
   display: block;
-  position: relative;
+  position: absolute;
   left: 50%;
   top: 50%;
   transform: translateX(-50%);
@@ -20,13 +29,16 @@ html {
 
 .image {
   display: flex;
-  position: absolute;
+  position: relative;
 }
 
-.banner {
-  display: flex;
+.text {
+  max-width: 45em;
   position: absolute;
+  display: flex;
+  text-align: left;
 }
+
 
 body {
   overflow: hidden;
