@@ -2,80 +2,81 @@ html {
   box-sizing: border-box;
   font-family: Roboto, sans-serif;
   font-family: "Roboto Condensed", sans-serif;
+  line-height: 1.2;
 }
 
 *, *::before, *::after {
   box-sizing: inherit;
 }
 
-.content {
-  display: inline-block;
-  padding: 1rem;
+body {
+  margin: 0;
 }
 
 .banner {
-  display: flex;
-  position: relative;
   max-height: 500px;
+  overflow: hidden;
+  position: relative;
 }
 
 .img-flex {
   display: block;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translateX(-50%);
   width: 100%;
 }
 
-.image {
+.banner-image img {
+  width: 105%;
+margin-left: 1em;
+}
+
+.banner-content {
   display: flex;
-  position: relative;
-  width: 80%;
+  align-items: flex-start;
+  justify-content: space-between;
   max-width: 45em;
-  padding-top: 1rem;
-  padding-bottom: .75rem;
-  align-items: center;
-}
-
-.text {
-  max-width: 45em;
+  width: 100%;
   position: absolute;
-  display: inline-block;
-  text-align: left;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  align-items: center;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
+.banner-image {
+  width: 30%;
+}
 
-body {
-  overflow: hidden;
-  margin: 0;
-  max-height: 500px;
-  justify-content: center;
-  align-items: center;
+.banner-text {
+  width: 60%;
 }
 
 h2 {
   font-size: 3rem;
   font-weight: bold;
   color: #000;
-  display: inline;
+  font-family: "Roboto Condensed", sans-serif;
+  margin: 0;
+  max-width: 6em;
+  padding-bottom: .2em;
 }
 
 p {
   font-size: 1.5rem;
-  display: inline-block;
+  font-family: Roboto, sans-serif;
+  margin: 0;
+  padding-bottom: 1em;
+  line-height: 1.5;
+  padding-right: 1em;
 }
 
 .btn {
   font-size: 1.125rem;
-  padding: .4em .75em .3em;
+  padding: .4em .75em .5em;
+  font-family: Roboto, sans-serif;
   background-color: #333;
   text-decoration: none;
   border-radius: 8px;
   border-width: 3px;
+  border-color: #333;
   color: #fff;
   display: inline-block;
   margin: auto;
@@ -88,4 +89,5 @@ p {
 
 .btn:hover {
   background-color: #000;
+  border-color: #000;
 }
